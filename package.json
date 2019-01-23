@@ -1,20 +1,26 @@
 {
-  "name": "expo-template-blank",
-  "description": "The Blank project template includes the minimum dependencies to run and an empty root component.",
+  "name": "react-dev-test-murilo",
+  "description": "A repository with react dev test from Murilo to XporY.com",
   "version": "0.0.4",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "eject": "expo eject"
+    "eject": "expo eject",
+	"test": "node ./node_modules/jest/bin/jest.js --watchAll"
+  },
+  "jest": {
+    "preset": "jest-expo"
   },
   "dependencies": {
     "expo": "^32.0.0",
     "react": "16.5.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz"
+    "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
+	"react-navigation": "^3.0.9"
   },
   "devDependencies": {
-    "babel-preset-expo": "^5.0.0"
+    "babel-preset-expo": "^5.0.0",
+	"jest-expo": "^32.0.0"
   }
 }
