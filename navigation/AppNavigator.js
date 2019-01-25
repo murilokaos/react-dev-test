@@ -32,6 +32,11 @@ const AppNavigator = createAppContainer(
       headerMode: 'none',
       mode: Platform.OS === 'ios' ? 'modal' : 'card',
       transitionConfig: dynamicModalTransition,
+      defaultNavigationOptions: {
+        headerStyle: {
+          backgroundColor: Colors.headerColor,
+        }
+      }
     }
   )
 );
